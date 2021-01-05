@@ -1,0 +1,14 @@
+version: '3'
+services: 
+  mysql:
+    container_name: docker-python-docx # 作成されるコンテナ名
+    build: ./ # 元になるDockerfileの場所
+    image: mysql:5.7 # 作成されるイメージ名
+
+    # データの永続化
+    volumes:
+      - //c/Users/DT0117/daichi-box/docker-python-docx/data:/var/www/html
+    
+    # 公開ポート
+    ports:
+      - "8080:80"
