@@ -23,8 +23,7 @@ http://localhost:8080/
 に`Apache`の画面が表示されたら立ち上げ成功
 
 ### `.docx`ファイルの準備
-元となるWordファイルを
-`/data/dist/`ディレクトリ直下に`input.docx`という名前で設置
+元となるWordファイルを`/data/dist/`ディレクトリに設置
 
 ### 各タグのクラス名等の設定
 `/data/converter.py`内で各タグの設定を行う
@@ -37,11 +36,8 @@ docker exec -it docker-python-docx sh
 
 変換処理が書いてあるファイルを実行
 ```
-cd /var/www/html/
-python3 converter.py
+python3 /var/www/html/converter.py
 ```
 
 ### 確認
-`/data/dist/`ディレクトリに`index.html`というファイルが生成されていたら成功  
-http://localhost:8080/dist/  
-にアクセスすると、作成されたHTMLが出力される
+`/data/dist/`ディレクトリにHTMLファイルが生成されていたら成功  
