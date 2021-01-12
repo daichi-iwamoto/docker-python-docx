@@ -36,7 +36,8 @@ docker exec -it docker-python-docx sh
 
 変換処理が書いてあるファイルを実行
 ```
-python3 /var/www/html/converter.py
+cd /var/www/html
+python3 converter.py
 ```
 
 ### 確認

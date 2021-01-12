@@ -12,7 +12,6 @@ RUN yum install -y python3-pip --enablerepo=epel
 RUN pip3 install --upgrade pip
 
 # python-dox install
-RUN pip install python-docx
 RUN pip install mammoth
 RUN pip install beautifulsoup4
 
