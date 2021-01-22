@@ -7,8 +7,8 @@ services:
 
     # データの永続化
     volumes:
-      - //c/Users/DT0117/daichi-box/docker-python-docx/data:/var/www/html
+      - ${VOLUMES_PATH}:/var/www/html
     
     # 公開ポート
     ports:
-      - "8080:80"
+      - ${APACHE_PORT}:80

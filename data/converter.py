@@ -23,6 +23,10 @@ for file in files:
     source = source.replace('<h4>', '<h4 class="">')
     source = source.replace('<h5>', '<h5 class="">')
 
+    # テーブル内のpタグ削除
+    source = re.sub('<th(.*?)<p>(.*?)</p>', '<th\\1\\2', source)
+    source = re.sub('<td(.*?)<p>(.*?)</p>', '<td\\1\\2', source)
+
     # パラグラフ
     source = source.replace('<p>', '<p class="">')
 
