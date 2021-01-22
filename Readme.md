@@ -59,3 +59,7 @@ python3 converter.py
 ### 確認
 
 `/data/dist/`ディレクトリに HTML ファイルが生成されていたら成功
+
+### Docker 停止コマンド
+
+`docker-compose down`
