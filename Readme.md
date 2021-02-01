@@ -63,3 +63,12 @@ python3 converter.py
 ### Docker 停止コマンド
 
 `docker-compose down`
+
+## トラブルシューティング
+
+Windows 10 Pro 以上で使用する場合は`WSL 2`を使用する事を推奨します。
+
+`WSL 2`を使用できない、インストールが難しい場合はDockerの設定画面から  
+`Docker Engine`の`"experimental"`を`true`にし、`Switch to Linux containers`を行って下さい。  
+※ 既に`Linux containers`になっている場合は`Switch to Windows containers`と  
+表示がされている為、こちらは実行しなくても問題ありません。
