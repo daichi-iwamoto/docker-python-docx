@@ -12,8 +12,9 @@ RUN yum install -y python3-pip --enablerepo=epel
 RUN pip3 install --upgrade pip
 
 # python-dox install
-RUN pip install mammoth
-RUN pip install beautifulsoup4
+RUN pip3 install mammoth
+RUN pip3 install beautifulsoup4
+RUN pip3 install html5lib
 
 EXPOSE 80
 

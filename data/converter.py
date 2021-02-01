@@ -4,6 +4,7 @@ import glob # read file name
 
 from bs4 import BeautifulSoup # html linter 
 from bs4 import Tag
+import html5lib
 
 import re # 正規表現
 
@@ -44,7 +45,7 @@ for file in files:
 
     # --------------------- class setting end ---------------------
 
-    html = BeautifulSoup(source, 'lxml')
+    html = BeautifulSoup(source, 'html5lib')
     html = html.prettify()
     
     outputfile = file.replace('.docx', '.html')

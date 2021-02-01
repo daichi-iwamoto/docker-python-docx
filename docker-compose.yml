@@ -3,7 +3,7 @@ services:
   os:
     container_name: docker-python-docx # 作成されるコンテナ名
     build: ./ # 元になるDockerfileの場所
-    image: centos8 # 作成されるイメージ名
+    image: docker-python-docx # 作成されるイメージ名
 
     # データの永続化
     volumes:
