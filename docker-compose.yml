@@ -1,9 +1,9 @@
 version: '3'
 services: 
-  mysql:
+  os:
     container_name: docker-python-docx # 作成されるコンテナ名
     build: ./ # 元になるDockerfileの場所
-    image: mysql:5.7 # 作成されるイメージ名
+    image: centos8 # 作成されるイメージ名
 
     # データの永続化
     volumes:
